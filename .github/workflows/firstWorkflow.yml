@@ -30,8 +30,15 @@ jobs:
         run: echo Hello, world!
 
       # Runs a set of commands using the runners shell
+      # i guess for now were just using the default node? TODO: probbably set this in stone
       - name: Run a multi-line script
         run: |
           node --version
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: Run npm version
+        run: |
+          npm --version
+      - name: see if Jest work 
+        run: |
+          jest main.js
