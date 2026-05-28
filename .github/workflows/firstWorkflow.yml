@@ -39,3 +39,6 @@ jobs:
       - name: Run npm version
         run: |
           npm --version
+      - name: see if Jest work 
+        run: |
+          jest main.js
